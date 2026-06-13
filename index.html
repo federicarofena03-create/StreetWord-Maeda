@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -7,35 +6,43 @@
 
 <title>StreetWord Maeda</title>
 
+<!-- Fuente moderna -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
 
 body{
     margin:0;
+    font-family: "Montserrat", sans-serif;
     background:#ffffff;
-    font-family: Arial, Helvetica, sans-serif;
     color:#111;
 }
 
+/* HEADER PRINCIPAL */
 header{
-    background:#000;
+    background: linear-gradient(135deg, #000, #222);
     color:white;
     text-align:center;
-    padding:60px 20px;
+    padding:80px 20px;
 }
 
 h1{
-    font-size:50px;
-    letter-spacing:4px;
+    font-size:55px;
+    letter-spacing:5px;
     margin-bottom:10px;
 }
 
 .hero-text{
     max-width:800px;
     margin:auto;
-    font-size:20px;
+    font-size:18px;
     line-height:1.6;
+    opacity:0.9;
 }
 
+/* BOTÓN */
 .btn{
     display:inline-block;
     margin-top:25px;
@@ -43,28 +50,54 @@ h1{
     background:white;
     color:black;
     text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
+    border-radius:10px;
+    font-weight:700;
+    transition:0.3s;
 }
 
+.btn:hover{
+    background:#ddd;
+}
+
+/* SECCIONES */
 section{
-    padding:60px 20px;
+    padding:70px 20px;
     text-align:center;
 }
 
-.categoria{
-    background:#f4f4f4;
-    margin:15px auto;
-    padding:25px;
-    border-radius:12px;
-    max-width:600px;
+h2{
+    font-size:32px;
+    margin-bottom:40px;
 }
 
+/* CATEGORÍAS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.card{
+    background:#f4f4f4;
+    padding:25px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    background:#eaeaea;
+}
+
+/* FOOTER */
 footer{
     background:#000;
     color:white;
     text-align:center;
     padding:30px;
+    margin-top:50px;
 }
 
 </style>
@@ -76,48 +109,57 @@ footer{
 <header>
     <h1>STREETWORD MAEDA</h1>
 
-```
-<p class="hero-text">
-    Moda urbana, streetwear y estilo premium en un solo lugar.
-    Descubre zapatillas, ropa casual y colecciones exclusivas
-    inspiradas en la cultura urbana actual.
-</p>
+    <p class="hero-text">
+        Moda urbana, streetwear y estilo premium en un solo lugar.  
+        Descubre zapatillas, ropa casual y colecciones exclusivas inspiradas en la cultura urbana actual.
+    </p>
 
-<a href="#" class="btn">Ver Colección</a>
-```
-
+    <a href="#productos" class="btn">Ver Colección</a>
 </header>
+
+<section id="productos">
+
+    <h2>Nuestras Categorías</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Zapatillas</h3>
+            <p>Modelos streetwear y sneakers exclusivos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Streetwear</h3>
+            <p>Camisetas, hoodies y outfits urbanos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Ropa Casual</h3>
+            <p>Moda cómoda para el día a día.</p>
+        </div>
+
+        <div class="card">
+            <h3>Colección Premium</h3>
+            <p>Piezas exclusivas de estilo elevado.</p>
+        </div>
+
+    </div>
+
+</section>
 
 <section>
 
-```
-<h2>Nuestras Categorías</h2>
+    <h2>Sobre la marca</h2>
 
-<div class="categoria">
-    <h3>Zapatillas</h3>
-    <p>Próximamente añadiremos imágenes y modelos.</p>
-</div>
-
-<div class="categoria">
-    <h3>Streetwear</h3>
-    <p>Camisetas, sudaderas y prendas urbanas.</p>
-</div>
-
-<div class="categoria">
-    <h3>Ropa Casual</h3>
-    <p>Moda para el día a día con estilo propio.</p>
-</div>
-
-<div class="categoria">
-    <h3>Colección Premium</h3>
-    <p>Selección exclusiva de prendas destacadas.</p>
-</div>
-```
+    <p style="max-width:800px;margin:auto;line-height:1.6;">
+        StreetWord Maeda nace de la cultura urbana moderna, combinando el estilo streetwear con influencias premium.
+        Nuestro objetivo es ofrecer prendas con personalidad, diseñadas para destacar en cualquier entorno.
+    </p>
 
 </section>
 
 <footer>
-    <p>© 2026 StreetWord Maeda</p>
+    © 2026 StreetWord Maeda — Todos los derechos reservados
 </footer>
 
 </body>
