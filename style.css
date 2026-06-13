@@ -16,13 +16,51 @@ body{
 
     position:relative;
 
-    background:
-        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
-        url("images/logo.png");
+    .hero{
+    height:60vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 
-    background-size:400px;
-    background-repeat:no-repeat;
-    background-position:center;
+    position:relative;
+    overflow:hidden;
+
+    background:#0b0b0f;
+}
+
+/* LOGO DIFUMINADO */
+.logo-bg{
+    position:absolute;
+    width:600px;
+    height:600px;
+
+    background:url("images/logo.png") no-repeat center;
+    background-size:contain;
+
+    opacity:0.07;
+    filter: blur(3px);
+
+    z-index:0;
+}
+
+/* TEXTO ENCIMA */
+.hero h1,
+.hero p{
+    position:relative;
+    z-index:1;
+}
+
+.hero h1{
+    font-size:60px;
+    letter-spacing:5px;
+    margin:0;
+}
+
+.hero p{
+    opacity:0.7;
+    margin-top:10px;
 }
 
 .hero h1{
