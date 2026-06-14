@@ -1,206 +1,23 @@
 body{
-    margin:0;
-    font-family:'Montserrat', sans-serif;
-    background:#07070a;
-    color:white;
-    overflow-x:hidden;
+margin:0;
+font-family:'Montserrat', sans-serif;
+background:#07070a;
+color:white;
+overflow-x:hidden;
 }
 
 /* ================= HERO ================= */
 .hero{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    position:relative;
-    background:#07070a;
-}
-/*LOGO SUAVE*/
-.logo-bg{
-position:absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
-
-```
-background-image:url("images/logo.png");
-background-repeat:no-repeat;
-background-position:center center;
-background-size:500px;
-
-opacity:0.2;
-
-border:3px solid red;
-
-z-index:1;
-```
-
-}
-
-}
-
-/* TITULO POTENTE */
-.brand-title{
-    font-size:72px;
-    font-weight:800;
-    letter-spacing:12px;
-    margin:0;
-    text-transform:uppercase;
-    line-height:1.1;
-}
-
-/* SUBTITULO */
-.subtitle{
-    opacity:0.7;
-    margin-top:15px;
-    letter-spacing:2px;
-}
-
-/* BOTONES HERO */
-.buttons{
-    margin-top:30px;
-    display:flex;
-    gap:15px;
-    justify-content:center;
-}
-
-/* BOTON PRINCIPAL */
-.btn-primary{
-    padding:14px 28px;
-    background:white;
-    color:black;
-    text-decoration:none;
-    border-radius:12px;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.btn-primary:hover{
-    transform:translateY(-3px);
-}
-
-/* BOTON SECUNDARIO */
-.btn-secondary{
-    padding:14px 28px;
-    border:1px solid rgba(255,255,255,0.25);
-    color:white;
-    text-decoration:none;
-    border-radius:12px;
-    transition:0.3s;
-}
-
-.btn-secondary:hover{
-    border-color:white;
-    background:rgba(255,255,255,0.05);
-    transform:translateY(-3px);
-}
-
-/* ================= GRID ================= */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
-    gap:20px;
-    padding:80px 40px;
-}
-
-/* CARDS MODERNAS */
-.card{
-    position:relative;
-    background:rgba(255,255,255,0.04);
-    border:1px solid rgba(255,255,255,0.08);
-    border-radius:16px;
-    padding:40px 20px;
-    text-align:center;
-    transition:0.3s;
-}
-
-/* LINEA ROJA LATERAL */
-.card::before{
-    content:"";
-    position:absolute;
-    left:0;
-    top:25%;
-    width:3px;
-    height:50%;
-    background:red;
-    border-radius:10px;
-    opacity:0.8;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    border:1px solid rgba(255,255,255,0.3);
-}
-
-/* ABOUT */
-.about{
-    padding:80px 20px;
-    text-align:center;
-}
-
-.about p{
-    max-width:700px;
-    margin:auto;
-    opacity:0.7;
-    line-height:1.7;
-}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:30px;
-    opacity:0.4;
-}
-
-/* ================= IMAGEN DETRÁS DEL TEXTO ================= */
-.bg-image{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-
-    width:600px;
-    height:600px;
-
-    background:url("images/dog.png") no-repeat center;
-    background-size:contain;
-
-    opacity:0.08;
-    filter: contrast(120%) blur(0px);
-
-    z-index:0;
-}
-
-/* ================================= */
-/* ARREGLO BOTONES HERO */
-/* ================================= */
-
-/* Evita que las imágenes bloqueen los clics */
-.logo-bg,
-.bg-image{
-pointer-events:none;
-}
-
-/* Asegura que el contenido quede por encima */
-.hero-content{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 position:relative;
-z-index:2;
+background:#07070a;
 }
 
-/* Refuerzo para los botones */
-.btn-primary,
-.btn-secondary{
-position:relative;
-z-index:3;
-cursor:pointer;
-}
-
-/* ================================= */
-/* LOGO DIFUMINADO DETRÁS DEL TEXTO */
-/* ================================= */
-
+/* ================= LOGO DIFUMINADO ================= */
 .logo-bg{
 position:absolute;
 top:50%;
@@ -211,22 +28,19 @@ transform:translate(-50%, -50%);
 width:700px;
 height:700px;
 
-background-image:url("images/logo.png");
-background-repeat:no-repeat;
-background-position:center;
+background:url("images/logo.png") no-repeat center;
 background-size:contain;
 
-opacity:0.08;
+opacity:0.12;
 filter:blur(4px);
 
 z-index:1;
-
 pointer-events:none;
 ```
 
 }
 
-/* IMAGEN SECUNDARIA DE FONDO */
+/* ================= IMAGEN FONDO ================= */
 .bg-image{
 position:absolute;
 top:50%;
@@ -243,22 +57,129 @@ background-size:contain;
 opacity:0.05;
 
 z-index:0;
-
 pointer-events:none;
 ```
 
 }
 
-/* CONTENIDO POR ENCIMA DEL FONDO */
+/* ================= CONTENIDO ENCIMA ================= */
 .hero-content{
 position:relative;
 z-index:2;
 }
 
-/* BOTONES SIEMPRE CLICABLES */
-.btn-primary,
-.btn-secondary{
+/* ================= TEXTO ================= */
+.brand-title{
+font-size:72px;
+font-weight:800;
+letter-spacing:12px;
+margin:0;
+text-transform:uppercase;
+line-height:1.1;
+}
+
+.subtitle{
+opacity:0.7;
+margin-top:15px;
+letter-spacing:2px;
+}
+
+/* ================= BOTONES ================= */
+.buttons{
+margin-top:30px;
+display:flex;
+gap:15px;
+justify-content:center;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn-primary{
+padding:14px 28px;
+background:white;
+color:black;
+text-decoration:none;
+border-radius:12px;
+font-weight:600;
+transition:0.3s;
+cursor:pointer;
 position:relative;
 z-index:3;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+}
+
+/* BOTÓN SECUNDARIO */
+.btn-secondary{
+padding:14px 28px;
+border:1px solid rgba(255,255,255,0.25);
+color:white;
+text-decoration:none;
+border-radius:12px;
+transition:0.3s;
 cursor:pointer;
+position:relative;
+z-index:3;
+}
+
+.btn-secondary:hover{
+border-color:white;
+background:rgba(255,255,255,0.05);
+transform:translateY(-3px);
+}
+
+/* ================= GRID ================= */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
+gap:20px;
+padding:80px 40px;
+}
+
+.card{
+position:relative;
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:16px;
+padding:40px 20px;
+text-align:center;
+transition:0.3s;
+}
+
+.card::before{
+content:"";
+position:absolute;
+left:0;
+top:25%;
+width:3px;
+height:50%;
+background:red;
+border-radius:10px;
+opacity:0.8;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border:1px solid rgba(255,255,255,0.3);
+}
+
+/* ================= ABOUT ================= */
+.about{
+padding:80px 20px;
+text-align:center;
+}
+
+.about p{
+max-width:700px;
+margin:auto;
+opacity:0.7;
+line-height:1.7;
+}
+
+/* ================= FOOTER ================= */
+footer{
+text-align:center;
+padding:30px;
+opacity:0.4;
 }
