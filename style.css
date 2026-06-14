@@ -16,20 +16,29 @@ body{
     position:relative;
     background:#07070a;
 }
+/*LOGO SUAVE*/
+.logo-bg{
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
 
-/* LOGO SUAVE */
-.logo.png{
-    position:absolute;
-    width:800px;
-    height:800px;
+```
+background-image:url("images/logo.png");
+background-repeat:no-repeat;
+background-position:center center;
+background-size:500px;
 
-    background:url("images/logo.png") no-repeat center;
-    background-size:contain;
+opacity:0.2;
 
-    opacity:0.05;
-    filter: blur(6px);
+border:3px solid red;
 
-    z-index:0;
+z-index:1;
+```
+
+}
+
 }
 
 /* TITULO POTENTE */
