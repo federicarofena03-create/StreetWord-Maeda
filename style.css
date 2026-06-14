@@ -187,3 +187,69 @@ position:relative;
 z-index:3;
 cursor:pointer;
 }
+
+/* ================================= */
+/* LOGO DIFUMINADO DETRÁS DEL TEXTO */
+/* ================================= */
+
+.logo-bg{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+
+```
+width:700px;
+height:700px;
+
+background-image:url("images/logo.png");
+background-repeat:no-repeat;
+background-position:center;
+background-size:contain;
+
+opacity:0.08;
+filter:blur(4px);
+
+z-index:1;
+
+pointer-events:none;
+```
+
+}
+
+/* IMAGEN SECUNDARIA DE FONDO */
+.bg-image{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+
+```
+width:600px;
+height:600px;
+
+background:url("images/dog.png") no-repeat center;
+background-size:contain;
+
+opacity:0.05;
+
+z-index:0;
+
+pointer-events:none;
+```
+
+}
+
+/* CONTENIDO POR ENCIMA DEL FONDO */
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+/* BOTONES SIEMPRE CLICABLES */
+.btn-primary,
+.btn-secondary{
+position:relative;
+z-index:3;
+cursor:pointer;
+}
